@@ -1,0 +1,420 @@
+{
+  "sections": [
+    "Brand & Size Reference",
+    "About You",
+    "Body Measurements & Shape",
+    "Fit Challenges",
+    "Coverage & Comfort Preferences",
+    "Size Availability & Shopping Behaviour",
+    "Your Feedback"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section": 0,
+      "title": "Which of the following brands have you ever shopped from?",
+      "multi": true,
+      "optional": false,
+      "options": [
+        "H&M",
+        "Zara",
+        "Mango",
+        "Westside",
+        "Zudio",
+        "ONLY",
+        "Other brand (please specify):",
+        "I have not shopped from any of the above"
+      ]
+    },
+    {
+      "id": 2,
+      "section": 0,
+      "title": "What size did you purchase most recently from the brand(s) you selected above?",
+      "multi": false,
+      "optional": false,
+      "options": [
+        "XXS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "Other:"
+      ],
+      "kind": "brandSizes"
+    },
+    {
+      "id": 3,
+      "section": 0,
+      "title": "Is the size you marked above the same size you usually wear across most brands?",
+      "multi": false,
+      "optional": false,
+      "options": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "id": 4,
+      "section": 0,
+      "title": "Which category do you shop for most frequently?",
+      "multi": true,
+      "optional": false,
+      "options": [
+        "Indo-Western / fusion wear",
+        "Western casual wear",
+        "Office/workwear",
+        "Ethnic wear",
+        "Dresses and occasion wear",
+        "Co-ord sets"
+      ]
+    },
+    {
+      "id": 5,
+      "section": 1,
+      "title": "What is your age group?",
+      "multi": false,
+      "optional": false,
+      "options": [
+        "Under 18",
+        "18–24",
+        "25–30",
+        "31–35",
+        "36–40",
+        "41–50",
+        "Above 50",
+        "Prefer not to say"
+      ]
+    },
+    {
+      "id": 6,
+      "section": 1,
+      "title": "What is your height?",
+      "multi": false,
+      "optional": false,
+      "options": [
+        "Below 5'0”",
+        "5'0”–5'2”",
+        "5'3”–5'5”",
+        "5'6”–5'8”",
+        "Above 5'8”",
+        "Not sure / prefer not to say"
+      ]
+    },
+    {
+      "id": 7,
+      "section": 2,
+      "title": "Approximate bust measurement (around the fullest part):",
+      "multi": false,
+      "optional": true,
+      "options": [
+        "Below 32”",
+        "32”–34”",
+        "35”–37”",
+        "38”–40”",
+        "41”–43”",
+        "44”–46”",
+        "Above 46”",
+        "Not sure / prefer not to say"
+      ]
+    },
+    {
+      "id": 8,
+      "section": 2,
+      "title": "What is your Bust (Chest) measurement?",
+      "multi": false,
+      "optional": true,
+      "options": [
+        "28",
+        "30",
+        "32",
+        "34",
+        "36",
+        "38",
+        "40",
+        "42",
+        "44",
+        "46+"
+      ]
+    },
+    {
+      "id": 9,
+      "section": 2,
+      "title": "What is your usual bra size?",
+      "multi": false,
+      "optional": true,
+      "options": [],
+      "kind": "bra"
+    },
+    {
+      "id": 10,
+      "section": 2,
+      "title": "Approximate waist measurement (at the narrowest point):",
+      "multi": false,
+      "optional": true,
+      "options": [
+        "Below 26”",
+        "26”–28”",
+        "29”–31”",
+        "32”–34”",
+        "35”–37”",
+        "38”–40”",
+        "Above 40”",
+        "Not sure / prefer not to say"
+      ]
+    },
+    {
+      "id": 11,
+      "section": 2,
+      "title": "Approximate hip measurement (around the fullest part):",
+      "multi": false,
+      "optional": true,
+      "options": [
+        "Below 35”",
+        "35”–37”",
+        "38”–40”",
+        "41”–43”",
+        "44”–46”",
+        "47”–49”",
+        "Above 49”",
+        "Not sure / prefer not to say"
+      ]
+    },
+    {
+      "id": 12,
+      "section": 2,
+      "title": "Which best describes your body shape or proportions?",
+      "multi": false,
+      "optional": true,
+      "options": [
+        "Hourglass – bust and hips are similar, with a defined waist",
+        "Pear – hips are wider than the bust",
+        "Apple – fuller midsection, comparatively narrower hips",
+        "Rectangle – bust, waist and hips are relatively similar",
+        "Inverted triangle – shoulders or bust are wider than hips",
+        "A combination / not sure"
+      ],
+      "kind": "shape"
+    },
+    {
+      "id": 13,
+      "section": 2,
+      "title": "Do you usually wear different sizes for your upper and lower body?",
+      "multi": false,
+      "optional": false,
+      "options": [
+        "Yes, upper body is usually a smaller size",
+        "Yes, lower body is usually a smaller size",
+        "I usually wear the same size",
+        "It depends on the brand or garment"
+      ]
+    },
+    {
+      "id": 14,
+      "section": 3,
+      "title": "What are the biggest fit issues you face when shopping for women's clothing?",
+      "multi": true,
+      "optional": false,
+      "options": [
+        "Bust feels too tight or fabric gapes around the bust",
+        "Waist fits, but hips or thighs feel tight",
+        "Fits at the hips, but is loose at the waist",
+        "Tightness around upper arms or biceps",
+        "Shoulder width or armholes do not fit properly",
+        "Too tight around the stomach or midsection",
+        "Garments are too long or too short for my height",
+        "Necklines gape or feel too revealing",
+        "I rarely face fit issues",
+        "Other:"
+      ]
+    },
+    {
+      "id": 15,
+      "section": 3,
+      "title": "Which garments are most difficult for you to find in the right fit?",
+      "multi": true,
+      "optional": false,
+      "options": [
+        "Shirts and blouses",
+        "Blazers and waistcoats",
+        "Dresses",
+        "Trousers and pants",
+        "Skirts",
+        "Co-ord sets",
+        "Indo-Western tops and tunics",
+        "Jumpsuits",
+        "Other:"
+      ]
+    },
+    {
+      "id": 16,
+      "section": 3,
+      "title": "When a garment does not fit properly, what do you usually do?",
+      "multi": true,
+      "optional": false,
+      "options": [
+        "Purchase a larger size",
+        "Purchase a smaller size",
+        "Get it altered",
+        "Avoid purchasing similar fits later",
+        "Purchase it despite the fit issue",
+        "Return it"
+      ]
+    },
+    {
+      "id": 17,
+      "section": 3,
+      "title": "Have you ever avoided buying a garment you liked because you were unsure about the fit?",
+      "multi": false,
+      "optional": false,
+      "options": [
+        "Frequently",
+        "Sometimes",
+        "Rarely",
+        "Never"
+      ]
+    },
+    {
+      "id": 18,
+      "section": 4,
+      "title": "What level of coverage do you generally prefer in everyday and workwear clothing?",
+      "multi": false,
+      "optional": false,
+      "options": [
+        "More coverage, with minimal exposure",
+        "Moderate coverage, with some skin exposure",
+        "Contemporary cuts with more skin exposure",
+        "It depends on the occasion and garment"
+      ]
+    },
+    {
+      "id": 19,
+      "section": 4,
+      "title": "Which areas do you prefer your clothing to provide more coverage for?",
+      "multi": true,
+      "optional": false,
+      "options": [
+        "Upper arms",
+        "Bust and neckline",
+        "Stomach / midsection",
+        "Hips and seat",
+        "Thighs",
+        "Back",
+        "No specific coverage preference"
+      ]
+    },
+    {
+      "id": 20,
+      "section": 4,
+      "title": "What sleeve lengths do you feel most comfortable wearing?",
+      "multi": false,
+      "optional": false,
+      "options": [
+        "Sleeveless",
+        "Cap sleeves",
+        "Elbow-length",
+        "Three-quarter sleeves",
+        "Full sleeves",
+        "Depends on the garment"
+      ]
+    },
+    {
+      "id": 21,
+      "section": 4,
+      "title": "What kurti or dress length do you usually prefer?",
+      "multi": false,
+      "optional": false,
+      "options": [
+        "Above hip",
+        "Hip length",
+        "Below hip",
+        "Mid-thigh",
+        "Knee length",
+        "Below knee / midi",
+        "Full length",
+        "Depends on the garment"
+      ]
+    },
+    {
+      "id": 22,
+      "section": 4,
+      "title": "What is your preferred fit for everyday and workwear garments?",
+      "multi": false,
+      "optional": false,
+      "options": [
+        "Slim / body-skimming",
+        "Regular fit",
+        "Relaxed fit",
+        "Oversized",
+        "Depends on the style"
+      ]
+    },
+    {
+      "id": 23,
+      "section": 5,
+      "title": "Do you find your size easily when shopping for women's clothing?",
+      "multi": false,
+      "optional": false,
+      "options": [
+        "Almost always",
+        "Usually",
+        "Sometimes",
+        "Rarely",
+        "Almost never"
+      ]
+    },
+    {
+      "id": 24,
+      "section": 5,
+      "title": "Which size range would you like brands to offer more consistently?",
+      "multi": false,
+      "optional": false,
+      "options": [
+        "XXS / petite",
+        "XS–S",
+        "M–L",
+        "XL–XXL",
+        "3XL and above",
+        "More options across all sizes"
+      ]
+    },
+    {
+      "id": 25,
+      "section": 5,
+      "title": "Would you prefer brands to offer different length options for the same size?",
+      "multi": false,
+      "optional": false,
+      "options": [
+        "Petite / shorter length",
+        "Regular length",
+        "Tall / longer length",
+        "All three length options",
+        "Not necessary for me"
+      ]
+    },
+    {
+      "id": 26,
+      "section": 5,
+      "title": "Would you be interested in garments designed for different body proportions within the same standard size?",
+      "multi": false,
+      "optional": false,
+      "options": [
+        "Yes, for different bust-to-waist proportions",
+        "Yes, for different waist-to-hip proportions",
+        "Yes, for different heights and torso lengths",
+        "Yes, all of the above",
+        "I am comfortable with standard sizing"
+      ]
+    },
+    {
+      "id": 27,
+      "section": 6,
+      "title": "What would you like clothing brands to change or offer more of?",
+      "multi": false,
+      "optional": true,
+      "options": [],
+      "kind": "text"
+    }
+  ]
+}

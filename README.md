@@ -1,36 +1,20 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ZLAATA Fit & Size Study
 
-## Getting Started
+Next.js employee survey with a separate identification screen (required name, optional phone), 27 questions, illustrated body shapes, and an administrator portal with charts and CSV exports.
 
-First, run the development server:
+## Portals
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- `/` and `/employee`: employee survey
+- `/admin`: administrator code login
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Local setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Run `npm ci`. Configure `DATABASE_URL` and `ADMIN_KEY` in a local `.env.local` file; never commit real values. Use a PostgreSQL connection URL, for example a Vercel Marketplace Neon database. Apply the schema with `node --env-file=.env.local scripts/migrate.mjs`, then run `npm run dev`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Vercel deployment
 
-## Learn More
+Import this GitHub repository as a Next.js project. Configure `DATABASE_URL` and `ADMIN_KEY` for the intended environments in Vercel. Apply `db/schema.sql` to that PostgreSQL database before collecting responses, then deploy. Missing database configuration causes submissions to fail safely while retaining the form answers. The administrator API rejects unauthenticated access. Responses are stored in PostgreSQL, with UUID-based retry deduplication.
 
-To learn more about Next.js, take a look at the following resources:
+Employee access should be restricted using your Vercel deployment access settings or company access controls. Names and optional phone numbers are identification, not proof of employee membership.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+No administrator code, database credentials, or employee response data is included in this repository.
