@@ -28,3 +28,5 @@ Response IDs are created only in the browser when Submit is pressed, then reused
 Run validation regression checks with `node --experimental-strip-types --test tests/survey-validation.test.mjs` (Node 22+).
 
 Illustrations in `public/measurement-guide.png` and `public/coverage-areas.png` were created with the built-in image generator: four height/bust/waist/hips measurement panels; six body-area coverage panels (arms, bust/neckline, midsection, hips/seat, thighs, back), on white in the survey's burgundy palette. Written instructions and alternative text accompany the images.
+
+Q12 now uses `public/body-shapes-illustrated.png`, generated with the built-in image tool. Prompt: five equally spaced adult women illustrating hourglass, pear, apple, rectangle, and inverted-triangle proportions, in burgundy tops and charcoal leggings, matching the educational measurement illustration style, white background and no labels. Measurement guides now use enlarged torso crops; Q8 has no guide. Visible required labels are removed without changing validation.
