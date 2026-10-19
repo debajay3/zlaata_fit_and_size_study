@@ -374,13 +374,13 @@
       "multi": false,
       "optional": false,
       "options": [
+        "XXS and below",
         "XXS / petite",
         "XS–S",
         "M–L",
         "XL–XXL",
-        "More options across all sizes",
-        "XXS and below",
-        "XXL and above"
+        "XXL and above",
+        "More options across all sizes"
       ]
     },
     {
@@ -390,13 +390,13 @@
       "multi": false,
       "optional": false,
       "options": [
+        "Yes",
+        "No",
         "Petite / shorter length",
         "Regular length",
         "Tall / longer length",
         "All three length options",
-        "Not necessary for me",
-        "Yes",
-        "No"
+        "Not necessary for me"
       ]
     },
     {
