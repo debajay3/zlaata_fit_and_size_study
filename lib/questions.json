@@ -22,6 +22,7 @@
         "Westside",
         "Zudio",
         "ONLY",
+        "Zlaata",
         "Other brand (please specify):",
         "I have not shopped from any of the above"
       ]
@@ -107,7 +108,7 @@
       "section": 2,
       "title": "Approximate bust measurement (around the fullest part):",
       "multi": false,
-      "optional": true,
+      "optional": false,
       "options": [
         "Below 32”",
         "32”–34”",
@@ -124,7 +125,7 @@
       "section": 2,
       "title": "What is your Bust (Chest) measurement?",
       "multi": false,
-      "optional": true,
+      "optional": false,
       "options": [
         "28",
         "30",
@@ -136,14 +137,15 @@
         "42",
         "44",
         "46+"
-      ]
+      ],
+      "kind": "select"
     },
     {
       "id": 9,
       "section": 2,
       "title": "What is your usual bra size?",
       "multi": false,
-      "optional": true,
+      "optional": false,
       "options": [],
       "kind": "bra"
     },
@@ -152,7 +154,7 @@
       "section": 2,
       "title": "Approximate waist measurement (at the narrowest point):",
       "multi": false,
-      "optional": true,
+      "optional": false,
       "options": [
         "Below 26”",
         "26”–28”",
@@ -169,7 +171,7 @@
       "section": 2,
       "title": "Approximate hip measurement (around the fullest part):",
       "multi": false,
-      "optional": true,
+      "optional": false,
       "options": [
         "Below 35”",
         "35”–37”",
@@ -186,7 +188,7 @@
       "section": 2,
       "title": "Which best describes your body shape or proportions?",
       "multi": false,
-      "optional": true,
+      "optional": false,
       "options": [
         "Hourglass – bust and hips are similar, with a defined waist",
         "Pear – hips are wider than the bust",
@@ -254,18 +256,17 @@
       "multi": true,
       "optional": false,
       "options": [
-        "Purchase a larger size",
-        "Purchase a smaller size",
         "Get it altered",
         "Avoid purchasing similar fits later",
         "Purchase it despite the fit issue",
-        "Return it"
+        "Return it",
+        "Exchange"
       ]
     },
     {
       "id": 17,
       "section": 3,
-      "title": "Have you ever avoided buying a garment you liked because you were unsure about the fit?",
+      "title": "Have you ever avoided buying a garment online, even though you liked it, because you were unsure about the fit?",
       "multi": false,
       "optional": false,
       "options": [
@@ -285,7 +286,9 @@
         "More coverage, with minimal exposure",
         "Moderate coverage, with some skin exposure",
         "Contemporary cuts with more skin exposure",
-        "It depends on the occasion and garment"
+        "It depends on the occasion and garment",
+        "None of these",
+        "Other (please specify)"
       ]
     },
     {
@@ -302,7 +305,8 @@
         "Thighs",
         "Back",
         "No specific coverage preference"
-      ]
+      ],
+      "kind": "coverage"
     },
     {
       "id": 20,
@@ -327,8 +331,6 @@
       "optional": false,
       "options": [
         "Above hip",
-        "Hip length",
-        "Below hip",
         "Mid-thigh",
         "Knee length",
         "Below knee / midi",
@@ -347,7 +349,8 @@
         "Regular fit",
         "Relaxed fit",
         "Oversized",
-        "Depends on the style"
+        "Depends on the style",
+        "Other (please specify)"
       ]
     },
     {
@@ -375,8 +378,9 @@
         "XS–S",
         "M–L",
         "XL–XXL",
-        "3XL and above",
-        "More options across all sizes"
+        "More options across all sizes",
+        "XXS and below",
+        "XXL and above"
       ]
     },
     {
@@ -390,7 +394,9 @@
         "Regular length",
         "Tall / longer length",
         "All three length options",
-        "Not necessary for me"
+        "Not necessary for me",
+        "Yes",
+        "No"
       ]
     },
     {
@@ -412,7 +418,7 @@
       "section": 6,
       "title": "What would you like clothing brands to change or offer more of?",
       "multi": false,
-      "optional": true,
+      "optional": false,
       "options": [],
       "kind": "text"
     }

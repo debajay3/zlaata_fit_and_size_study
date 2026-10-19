@@ -18,3 +18,13 @@ Import this GitHub repository as a Next.js project. Configure `DATABASE_URL` and
 Employee access should be restricted using your Vercel deployment access settings or company access controls. Names and optional phone numbers are identification, not proof of employee membership.
 
 No administrator code, database credentials, or employee response data is included in this repository.
+
+## Revised survey (October 2026)
+
+All 27 questions require an answer. Where offered, a not-sure answer is valid; band and cup must both be selected or the not-sure answer used. If no brands are selected, question 2 requires an explicit not-applicable answer. Phone remains optional.
+
+Response IDs are created only in the browser when Submit is pressed, then reused for retries. An existing response ID with different content produces a recoverable conflict instead of silently discarding the new response. Existing response records remain readable.
+
+Run validation regression checks with `node --experimental-strip-types --test tests/survey-validation.test.mjs` (Node 22+).
+
+Illustrations in `public/measurement-guide.png` and `public/coverage-areas.png` were created with the built-in image generator: four height/bust/waist/hips measurement panels; six body-area coverage panels (arms, bust/neckline, midsection, hips/seat, thighs, back), on white in the survey's burgundy palette. Written instructions and alternative text accompany the images.

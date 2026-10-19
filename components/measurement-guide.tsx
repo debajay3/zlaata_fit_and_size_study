@@ -1,0 +1,8 @@
+const guides:Record<number,{panel:number;title:string;description:string}>={
+ 6:{panel:0,title:'How to measure your height',description:'Stand barefoot against a wall, looking straight ahead. Place a flat book on your head, mark its level, then measure from the floor to that mark.'},
+ 7:{panel:1,title:'How to measure your bust',description:'Wrap a soft measuring tape around the fullest part of your bust. Keep it level around your back, snug without pressing into your body. Read the measurement in inches.'},
+ 8:{panel:1,title:'How to measure your chest / bust',description:'Measure around the fullest part of your bust with the tape level and comfortably snug. Select your measurement in inches.'},
+ 10:{panel:2,title:'How to measure your waist',description:'Wrap the tape around your natural waist, at the narrowest part of your torso. Relax and breathe normally; keep the tape level. Read the measurement in inches.'},
+ 11:{panel:3,title:'How to measure your hips',description:'Stand with your feet together. Wrap the tape around the fullest part of your hips and seat, keeping it level. Read the measurement in inches.'}
+};
+export default function MeasurementGuide({questionId}:{questionId:number}){const g=guides[questionId];if(!g)return null;const bounds=[[0,280],[284,719],[723,1125],[1130,1536]][g.panel];const width=bounds[1]-bounds[0];return <figure className="measurementGuide"><div className="measurementImage" style={{width:`${width/1024*210}px`,height:210,backgroundSize:`${1536/width*100}% 100%`,backgroundPosition:`${bounds[0]/(1536-width)*100}% center`}} role="img" aria-label={g.title}/><figcaption><strong>{g.title}</strong><p>{g.description}</p></figcaption></figure>;}
